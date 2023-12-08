@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "pizzamod",
+	"version": "${version}",
+	"name": "PizzaMod",
+	"description": "This mod adds Pizza to Minecraft",
+	"authors": [
+		"Blobba_Tobba247"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pizzamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"blobbatobba.pizzamod.PizzaMod"
+		],
+		"fabric-datagen": [
+			"blobbatobba.pizzamod.PizzaModDataGenerator"
+		]
+	},
+	"mixins": [
+		"pizzamod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
