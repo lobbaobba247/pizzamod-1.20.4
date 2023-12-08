@@ -19,7 +19,7 @@
 			"blobbatobba.pizzamod.PizzaMod"
 		],
 		"client": [
-			"blobbatobba.pizzamod.PizzaMod"
+			"blobbatobba.pizzamod.PizzaModClient"
 		],
 
 		"fabric-datagen": [
