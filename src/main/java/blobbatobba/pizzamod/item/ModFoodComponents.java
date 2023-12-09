@@ -24,7 +24,9 @@ public class ModFoodComponents {
 
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
 
-    public static final Item PIZZA = registerItem("pizza", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(20).saturationModifier(1f).build())));
+    public static final Item PIZZA = registerItem("pizza", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(20).saturationModifier(1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.LUCK, 600), 1f).statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 600), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 600), 1f).build())));
 
     public static final Item Uncooked_PIZZA = registerItem("uncooked_pizza", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(0)
             .saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1200),1f)
