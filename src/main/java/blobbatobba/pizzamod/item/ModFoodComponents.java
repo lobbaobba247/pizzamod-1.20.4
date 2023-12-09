@@ -14,10 +14,12 @@ public class ModFoodComponents {
     private static void addItemsToFood_and_DrinksItemGroup(FabricItemGroupEntries entries) {
         entries.add(TOMATO);
         entries.add(CHEESE);
+        entries.add(PIZZA);
     }
 
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build())));
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
+    public static final Item PIZZA = registerItem("pizza", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(20).saturationModifier(1f).build())));
     public static void registerModItems() {
         PizzaMod.LOGGER.info("Registering Mod Items for "  + PizzaMod.MOD_ID);
 
