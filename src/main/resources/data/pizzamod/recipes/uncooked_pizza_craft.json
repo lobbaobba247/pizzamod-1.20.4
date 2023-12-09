@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "foodstuffs",
+    "pattern": [
+        "###",
+        "PPP",
+        "BBB"
+    ],
+    "key": {
+        "#": {
+            "item": "pizzamod:cheese"
+        },
+        "P": {
+            "item": "pizzamod:tomato"
+        },
+        "B": {
+            "item": "minecraft:bread"
+        }
+    },
+    "result": {
+        "item": "pizzamod:uncooked_pizza",
+        "count": 3
+    }
+}

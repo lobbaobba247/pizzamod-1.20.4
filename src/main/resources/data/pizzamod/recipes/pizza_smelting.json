@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "pizzamod:uncooked_pizza"
+    },
+    "result": "pizzamod:pizza",
+    "experience": 10,
+    "cookingtime": 600
+}
