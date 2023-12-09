@@ -1,8 +1,7 @@
 package blobbatobba.pizzamod;
 
-import blobbatobba.pizzamod.item.ModItems;
+import blobbatobba.pizzamod.item.ModFoodComponents;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +12,6 @@ public class PizzaMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		ModItems.registerModItems();
+		ModFoodComponents.registerModItems();
 	}
 }
