@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "pizzamod",
 	"version": "${version}",
-	"name": "PizzaMod",
+	"name": "Pizza Mod",
 	"description": "This mod adds Pizza to Minecraft",
 	"authors": [
 		"Blobba_Tobba247"
