@@ -1,6 +1,9 @@
 {
   "item.pizzamod.tomato": "Tomato",
+  "item.pizzamod.tomato_seeds": "Tomato Seeds",
   "item.pizzamod.cheese": "Cheese",
   "item.pizzamod.pizza": "Pizza",
-  "item.pizzamod.uncooked_pizza": "Uncooked Pizza"
+  "item.pizzamod.uncooked_pizza": "Uncooked Pizza",
+
+  "block.pizzamod.tomato_crop": "Tomato Crop"
 }

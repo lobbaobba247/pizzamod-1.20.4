@@ -9,6 +9,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+
+import static blobbatobba.pizzamod.item.ModItems.TOMATO_SEEDS;
 import static blobbatobba.pizzamod.item.ModItems.registerItem;
 
 public class ModFoodComponents {
@@ -18,6 +20,7 @@ public class ModFoodComponents {
         entries.add(CHEESE);
         entries.add(PIZZA);
         entries.add(Uncooked_PIZZA);
+        entries.add(TOMATO_SEEDS);
     }
 
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build())));

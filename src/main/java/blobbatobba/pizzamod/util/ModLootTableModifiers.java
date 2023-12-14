@@ -1,6 +1,6 @@
 package blobbatobba.pizzamod.util;
 
-import blobbatobba.pizzamod.item.ModFoodComponents;
+import blobbatobba.pizzamod.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -22,7 +22,7 @@ public class ModLootTableModifiers {
                         LootPool.Builder poolBuilder = LootPool.builder()
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .conditionally(RandomChanceLootCondition.builder(0.75f)) // Drops 75% of the time
-                                .with(ItemEntry.builder(ModFoodComponents.TOMATO))
+                                .with(ItemEntry.builder(ModItems.TOMATO_SEEDS))
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }
