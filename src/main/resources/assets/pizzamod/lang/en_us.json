@@ -1,9 +1,18 @@
 {
+  "item.pizzamod.uncooked_pizza": "Uncooked Pizza",
+  "item.pizzamod.pepperoni_pizza": "Pepperoni Pizza",
+  "item.pizzamod.pineapple_pizza": "Pineapple Pizza",
+  "item.pizzamod.pizza": "Pizza",
+
   "item.pizzamod.tomato": "Tomato",
   "item.pizzamod.tomato_seeds": "Tomato Seeds",
-  "item.pizzamod.cheese": "Cheese",
-  "item.pizzamod.pizza": "Pizza",
-  "item.pizzamod.uncooked_pizza": "Uncooked Pizza",
+  "block.pizzamod.tomato_crop": "Tomato Crop",
 
-  "block.pizzamod.tomato_crop": "Tomato Crop"
+  "item.pizzamod.cheese": "Cheese",
+  "item.pizzamod.pepperoni": "Pepperoni",
+  "item.pizzamod.pineapple": "Pineapple",
+  "item.pizzamod.beer": "Beer",
+
+  "itemgroup.pizza_collection": "Pizza Collection"
+
 }

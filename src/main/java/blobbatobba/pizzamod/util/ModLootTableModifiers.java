@@ -1,5 +1,6 @@
 package blobbatobba.pizzamod.util;
 
+import blobbatobba.pizzamod.item.ModFoodComponents;
 import blobbatobba.pizzamod.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
@@ -14,6 +15,9 @@ public class ModLootTableModifiers {
     private static final Identifier SHORT_GRASS_ID
             = new Identifier("minecraft", "blocks/short_grass");
 
+    private static final Identifier TALL_GRASS_ID
+            = new Identifier("minecraft", "blocks/tall_grass");
+
 
 
     public static void modifyLootTables() {
@@ -26,6 +30,15 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }
-        });
+                    if(TALL_GRASS_ID.equals(id)) {
+                        LootPool.Builder poolBuilder = LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(RandomChanceLootCondition.builder(0.75f)) // Drops 75% of the time
+                                .with(ItemEntry.builder(ModFoodComponents.PINEAPPLE))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                        tableBuilder.pool(poolBuilder.build());
+                    }
+
+                });
     }
 }
