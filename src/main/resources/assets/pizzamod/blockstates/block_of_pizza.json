@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "pizzamod:block/block_of_pizza" }
+  }
+}

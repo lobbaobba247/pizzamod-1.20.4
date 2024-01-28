@@ -2,6 +2,7 @@ package blobbatobba.pizzamod.item;
 
 import blobbatobba.pizzamod.PizzaMod;
 
+import blobbatobba.pizzamod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -28,6 +29,7 @@ public class ModItemGroups {
                         entries.add(PIZZA);
                         entries.add(PEPPERONI_PIZZA);
                         entries.add(PINEAPPLE_PIZZA);
+                        entries.add(ModBlocks.BLOCK_OF_PIZZA);
                     }).build());
 
 

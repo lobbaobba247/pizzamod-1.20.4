@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#P#",
+        "PRP",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "pizzamod:pizza"
+        },
+        "P": {
+            "item": "pizzamod:pepperoni_pizza"
+        },
+        "R": {
+            "item": "pizzamod:pineapple_pizza"
+        }
+    },
+    "result": {
+        "item": "pizzamod:block_of_pizza",
+        "count": 1
+    }
+}

@@ -3,6 +3,7 @@ package blobbatobba.pizzamod;
 import blobbatobba.pizzamod.block.ModBlocks;
 import blobbatobba.pizzamod.item.ModFoodComponents;
 import blobbatobba.pizzamod.item.ModItemGroups;
+import blobbatobba.pizzamod.item.ModItems;
 import blobbatobba.pizzamod.util.ModCustomTrades;
 import blobbatobba.pizzamod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
@@ -17,6 +18,8 @@ public class PizzaMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModFoodComponents.registerModItems();
+		ModBlocks.registerBlock();
+		ModItems.registerBlockItem();
 		ModBlocks.registerModBlocks();
 
 		ModItemGroups.registerItemGroups();
